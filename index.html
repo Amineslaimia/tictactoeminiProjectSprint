@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .mainDiv {
+          display: grid;
+          width: 600px;
+          height: 600px;
+          background-color: #1faadb;
+          margin-top: 100px;
+          grid-template-areas: 
+          "cell1 cell2 cell3"
+          "cell4 cell5 cell6"
+          "cell7 cell8 cell9"
+        }
+        #cell1{
+         grid-area: "cell1";
+        padding:45%;
+         border-right-style: solid;
+         border-bottom-style: solid;
+        }
+        #cell2{
+         grid-area: "cell2";
+         padding:45%;
+         border-right-style: solid;
+         border-bottom-style: solid;
+        }
+        #cell3{
+          padding:45%;
+         grid-area: "cell3";
+         border-bottom-style: solid;
+        }
+        #cell4{
+          padding:45%;
+         grid-area: "cell4";
+         border-right-style: solid;
+         border-bottom-style: solid;
+        }
+        #cell5{
+          padding:45%;
+         grid-area: "cell5";
+         border-right-style: solid;
+         border-bottom-style: solid;
+        }
+        #cell6{
+          padding:45%;
+         grid-area: "cell6";
+         border-bottom-style: solid;
+        }
+        #cell7{
+          padding:45%;
+         grid-area: "cell7";
+         border-right-style: solid;
+        }
+        #cell8{
+          padding:45%;
+         grid-area: "cell8";
+         border-right-style: solid;
+        }
+        #cell9{
+          padding:45%;
+
+         grid-area: "cell9";
+        }
+        .name{
+          font-size: 40px;
+          font-family: monospace;
+        }
+        #result{
+          font-size: 40px;
+          font-family: monospace;
+        }
+        #reset{
+          font-size: 30px;
+          margin-top: 100px;
+          font-family: monospace;
+        }
+        
+
+      </style>
+    <title>tic tac toe</title>
+</head>
+<body>
+    <center>
+      <div class='name'>tic tac toe</div><br>
+      <div id='result'></div>
+        <div class ='mainDiv'>
+          <div id='cell1'>-</div>
+          <div id='cell2'>-</div>
+          <div id='cell3'>-</div>
+          <div id='cell4'>-</div>
+          <div id='cell5'>-</div>
+          <div id='cell6'>-</div>
+          <div id='cell7'>-</div>
+          <div id='cell8'>-</div>
+          <div id='cell9'>-</div>
+        </div>
+        <button id ='reset'>Reset</button>
+    </center>
+    <script src="app.js"></script>
+</body>
+</html>
